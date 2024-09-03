@@ -1,3 +1,15 @@
+#Basic Triangle Patterns
+
+#*Right-Angled Triangle
+leng=int(input())
+for i in range(leng+1):
+    print("*"*i)
+
+
+
+
+
+
 #tree
 def tree_is(height):
     width = 2 * height - 1  # Total width of the tree
