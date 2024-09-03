@@ -17,6 +17,11 @@ leng = int(input("Enter the height of the triangle: "))
 for i in range(leng, 0, -1):
     print("*" * i)
 
+#Inverted Isosceles Triangle
+leng = int(input("Enter the height of the triangle: "))
+for i in range(leng, 0, -1):
+    x = "*" * (2 * i - 1)  # Creates a string of stars with a decreasing odd number
+    print(x.center(2 * leng - 1))
 
 
 #tree
