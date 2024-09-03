@@ -1,12 +1,21 @@
-#Basic Triangle Patterns
+#1.Basic Triangle Patterns
 
 #*Right-Angled Triangle
 leng=int(input())
 for i in range(leng+1):
     print("*"*i)
+#*Isosceles Triangle:
+leng = int(input("Enter the height of the triangle: "))
+for i in range(leng):
+    x = "*" * (2 * i + 1)  # Creates a string of stars with an increasing odd number
+    print(x.center(2 * leng - 1))
 
+#2.Inverted Triangle Patterns
 
-
+#*Inverted Right-Angled Triangle:
+leng = int(input("Enter the height of the triangle: "))
+for i in range(leng, 0, -1):
+    print("*" * i)
 
 
 
