@@ -108,3 +108,22 @@ if __name__ == '__main__':
 
 #For efficiency with large datasets, use the binary search approach.
 #For simplicity and ease of understanding, use the linear search approach.
+
+
+
+# to find the no of pain which can generated the value of k after addition from and array with no duplicates
+arry = [5, 7, 1, -1]
+k = 6
+sum_pairs = 0
+l = []
+
+for i in range(len(arry)):
+    for j in range(i + 1, len(arry)):
+        if arry[i] + arry[j] == k:
+            pair = sorted([arry[i], arry[j]])  # Sort the pair to handle order (e.g., (1, 5) and (5, 1))
+            if pair not in l:  # Check if the pair is already counted
+                l.append(pair)  # Add the unique pair to the list
+                sum_pairs += 1  # Increment the count
+
+print(sum_pairs)
+
