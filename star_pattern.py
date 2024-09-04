@@ -1,9 +1,16 @@
 #1.Basic Triangle Patterns
 
-#*Right-Angled Triangle
+#*left-Alinged Triangle
 leng=int(input())
 for i in range(leng+1):
     print("*"*i)
+
+#Right-Aligned:
+leng=int(input())
+for i in range(leng+1):
+    x=("*"*i)
+    print(x.rjust(leng))
+
 #*Isosceles Triangle:
 leng = int(input("Enter the height of the triangle: "))
 for i in range(leng):
